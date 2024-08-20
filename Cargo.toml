@@ -5,13 +5,13 @@
 resolver = "2"
 
 members = [
-    "backend-comparison",
-    "crates/*",
-    "crates/burn-import/pytorch-tests",
-    "crates/burn-import/onnx-tests",
-    "examples/*",
-    "examples/pytorch-import/model",
-    "xtask",
+  "backend-comparison",
+  "crates/*",
+  "crates/burn-import/pytorch-tests",
+  "crates/burn-import/onnx-tests",
+  "examples/*",
+  "examples/pytorch-import/model",
+  "xtask",
 ]
 
 exclude = ["examples/notebook"]
@@ -56,7 +56,7 @@ regex = "1.10.4"
 reqwest = "0.11.27"
 rmp-serde = "1.1.2"
 rstest = "0.18.2"
-rusqlite = { version = "0.30.0" }
+rusqlite = { version = "0.31.0" }
 rust-format = { version = "0.3.4" }
 sanitize-filename = "0.5.0"
 serde_rusqlite = "0.34.0"
@@ -99,8 +99,8 @@ os_info = "3.8.2"
 wsl = "0.1.0"
 
 bincode = { version = "2.0.0-rc.3", features = [
-    "alloc",
-    "serde",
+  "alloc",
+  "serde",
 ], default-features = false }
 
 #
@@ -109,24 +109,24 @@ bincode = { version = "2.0.0-rc.3", features = [
 derive-new = { version = "0.6.0", default-features = false }
 
 half = { version = "2.4.1", features = [
-    "alloc",
-    "num-traits",
-    "serde",
+  "alloc",
+  "num-traits",
+  "serde",
 ], default-features = false }
 ndarray = { version = "0.15.6", default-features = false }
 matrixmultiply = { version = "0.3.8", default-features = false }
 openblas-src = "0.10.9"
 blas-src = { version = "0.9.0", default-features = false }
 num-traits = { version = "0.2.18", default-features = false, features = [
-    "libm",
+  "libm",
 ] } # libm is for no_std
 rand = { version = "0.8.5", default-features = false, features = [
-    "std_rng",
+  "std_rng",
 ] } # std_rng is for no_std
 rand_distr = { version = "0.4.3", default-features = false }
 serde = { version = "1.0.197", default-features = false, features = [
-    "derive",
-    "alloc",
+  "derive",
+  "alloc",
 ] } # alloc is for no_std, derive is needed
 serde_json = { version = "1.0.115", default-features = false }
 uuid = { version = "1.8.0", default-features = false }
