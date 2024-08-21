@@ -12,52 +12,51 @@ version.workspace = true
 
 [features]
 default = [
-    "std",
-    "burn-candle?/default",
-    "burn-common/default",
-    "burn-dataset?/default",
-    "burn-ndarray?/default",
-    "burn-tch?/default",
-    "burn-tensor/default",
-    "burn-wgpu?/default",
-    "burn-autodiff?/default",
+  "std",
+  "burn-candle?/default",
+  "burn-common/default",
+  "burn-ndarray?/default",
+  "burn-tch?/default",
+  "burn-tensor/default",
+  "burn-wgpu?/default",
+  "burn-autodiff?/default",
 ]
 std = [
-    "burn-autodiff?/std",
-    "bincode/std",
-    "burn-candle?/std",
-    "burn-common/std",
-    "burn-ndarray?/std",
-    "burn-tensor/std",
-    "burn-wgpu?/std",
-    "flate2",
-    "half/std",
-    "log",
-    "rand/std",
-    "rmp-serde",
-    "serde/std",
-    "serde_json/std",
-    "num-traits/std",
+  "burn-autodiff?/std",
+  "bincode/std",
+  "burn-candle?/std",
+  "burn-common/std",
+  "burn-ndarray?/std",
+  "burn-tensor/std",
+  "burn-wgpu?/std",
+  "flate2",
+  "half/std",
+  "log",
+  "rand/std",
+  "rmp-serde",
+  "serde/std",
+  "serde_json/std",
+  "num-traits/std",
 ]
 doc = [
-    "std",
-    # Backends
-    "dataset",
-    "candle",
-    "fusion",
-    "ndarray",
-    "tch",
-    "wgpu",
-    "vision",
-    "autodiff",
-    # Doc features
-    "burn-candle/doc",
-    "burn-common/doc",
-    "burn-dataset/doc",
-    "burn-ndarray/doc",
-    "burn-tch/doc",
-    "burn-tensor/doc",
-    "burn-wgpu/doc",
+  "std",
+  # Backends
+  "dataset",
+  "candle",
+  "fusion",
+  "ndarray",
+  "tch",
+  "wgpu",
+  "vision",
+  "autodiff",
+  # Doc features
+  "burn-candle/doc",
+  "burn-common/doc",
+  "burn-dataset/doc",
+  "burn-ndarray/doc",
+  "burn-tch/doc",
+  "burn-tensor/doc",
+  "burn-wgpu/doc",
 ]
 dataset = ["burn-dataset"]
 network = ["burn-common/network"]
@@ -136,7 +135,7 @@ num-traits = { workspace = true }
 [dev-dependencies]
 tempfile = { workspace = true }
 burn-dataset = { path = "../burn-dataset", version = "0.13.2", features = [
-    "fake",
+  "fake",
 ] }
 
 burn-ndarray = { path = "../burn-ndarray", version = "0.13.2", default-features = false }
