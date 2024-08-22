@@ -12,7 +12,7 @@ version.workspace = true
 rust-version = "1.75"
 
 [features]
-default = ["burn-core/default", "burn-train?/default", "std"]
+default = ["burn-core/default"]
 std = ["burn-core/std"]
 doc = ["default", "burn-core/doc", "burn-train/doc"]
 
